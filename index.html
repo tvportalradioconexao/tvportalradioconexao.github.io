@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tv Portal Rádio Conexão Sertãozinho-Sp</title>
+<!-- Importando o FontAwesome atualizado via CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
 * {
 margin: 0;
@@ -42,26 +44,23 @@ filter: drop-shadow(0 4px 8px rgba(11, 29, 58, 0.2));
 }
 h1 {
 font-size: 24px;
-margin-bottom: 10px;
+margin-bottom: 15px;
 color: #d32f2f;
 }
 h2 {
 font-size: 18px;
 margin-bottom: 10px;
-color: #0b1d3a;
+color: #d32f2f;
 }
 p {
 font-size: 15px;
 margin-bottom: 15px;
 line-height: 1.4;
-color: #333333;
+color: #0b1d3a;
 }
-.domain {
+.destaque-negrito {
 font-weight: bold;
-color: #ffffff;
-background: #0b1d3a;
-padding: 3px 8px;
-border-radius: 4px;
+color: #0b1d3a;
 }
 .video-container {
 position: relative;
@@ -93,9 +92,62 @@ font-weight: bold;
 font-size: 15px;
 box-shadow: 0 4px 10px rgba(211, 47, 47, 0.4);
 transition: background 0.3s ease;
+margin-bottom: 20px;
 }
 .btn-whatsapp:hover {
 background-color: #b71c1c;
+}
+/* Estilo para os ícones das redes sociais */
+.social-icons {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 12px;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+.social-icons a {
+display: inline-flex;
+justify-content: center;
+align-items: center;
+width: 42px;
+height: 42px;
+background-color: #0b1d3a;
+color: white;
+border-radius: 50%;
+text-decoration: none;
+font-size: 20px;
+transition: background 0.3s ease, transform 0.2s ease;
+box-shadow: 0 4px 8px rgba(11, 29, 58, 0.2);
+}
+.social-icons a:hover {
+background-color: #d32f2f;
+transform: translateY(-3px);
+}
+.email-contato {
+margin-bottom: 20px;
+font-size: 15px;
+}
+.email-contato a {
+color: #0b1d3a;
+font-weight: bold;
+text-decoration: none;
+}
+.email-contato a:hover {
+color: #d32f2f;
+text-decoration: underline;
+}
+.footer-info {
+border-top: 1px solid #dcdcdc;
+padding-top: 15px;
+font-size: 12px;
+color: #555555;
+line-height: 1.5;
+}
+.footer-info p {
+font-size: 12px;
+color: #555555;
+margin-bottom: 8px;
 }
 </style>
 </head>
@@ -112,12 +164,38 @@ background-color: #b71c1c;
     </div> 
 
     <h1>Anuncie Conosco!</h1>
-    <p>Quem faz propaganda vende muito mais, 16 anos na comunicação de Sertãozinho-SP só tem uma <span class="domain">radioconexao.net</span> Tv | Portal | Rádio.</p>
-    <p>Se você tem interesse em anunciar, clique no botão abaixo para falar diretamente com o nosso departamento comercial:</p> 
+    <p class="destaque-negrito">
+        Quem faz propaganda vende muito mais.<br>
+        São 16 anos na comunicação de Sertãozinho.<br>
+        Somos: Tv, Portal & Rádio.
+    </p>
+    <p class="destaque-negrito">Se você tem interesse em anunciar, clique no botão abaixo para falar diretamente com o nosso departamento comercial:</p> 
 
     <a class="btn-whatsapp" href="https://wa.me/5516992408939?text=Olá,%20tenho%20interesse%20em%20anunciar%20a%20minha%20empresa" target="_blank">
     Falar pelo WhatsApp
     </a>
+
+    <!-- Seção dos ícones das redes sociais -->
+    <div class="social-icons">
+        <a href="https://youtube.com/@tvportalradioconexao" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.instagram.com/tvportalradioconexao" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/tvportalradioconexao" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.tiktok.com/@tvportalradioconexao" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://kwai.com/@tvportalradioconexao" target="_blank" title="Kwai"><i class="fa-solid fa-video"></i></a>
+    </div>
+
+    <!-- E-mail de contato -->
+    <div class="email-contato">
+        <a href="mailto:emissoraconexao@yahoo.com.br">emissoraconexao@yahoo.com.br</a>
+    </div>
+
+    <!-- Rodapé com informações legais e endereço -->
+    <div class="footer-info">
+        <p>&copy; 2010 - Tv Portal Rádio Conexão | Todos os direitos reservados</p>
+        <p>Empresa do grupo: SISTEMA CONEXÃO DE COMUNICAÇÃO</p>
+        <p>Rua Frederico Ozanan, 1594 - Alto do Ginásio - 14160-640 - Sertãozinho - SP | Fone (16) 3947-7999</p>
+        <p style="font-style: italic; margin-bottom: 0;">É proibida qualquer reprodução deste conteúdo sem prévia autorização</p>
+    </div>
 </div> 
 
 </body>
